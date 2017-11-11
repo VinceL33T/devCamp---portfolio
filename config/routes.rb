@@ -9,4 +9,4 @@ get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
 
   root to: 'pages#home' 
 
-end
+end 
