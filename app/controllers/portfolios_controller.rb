@@ -68,5 +68,4 @@ class PortfoliosController < ApplicationController
                                         :body, 
                                         technologies_attributes: [:name])
     end
-
 end
