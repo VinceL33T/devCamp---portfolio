@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/VinceL33T/greco2_view_tool
-  revision: b9eb57a309db970950559adbf0b153173e3acc38
-  specs:
-    greco2_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -78,6 +72,7 @@ GEM
       activerecord (>= 4.0.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    greco2_view_tool (0.1.2)
     i18n (0.9.1)
       concurrent-ruby (~> 1.0)
     jbuilder (2.7.0)
@@ -199,7 +194,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise (~> 4.3)
   friendly_id (~> 5.1.0)
-  greco2_view_tool!
+  greco2_view_tool (~> 0.1.2)
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
