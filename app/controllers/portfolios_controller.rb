@@ -53,14 +53,10 @@ class PortfoliosController < ApplicationController
   end
 
   def show
-    @portfolio_item = Portfolio.find(params[:id])
   end
 
   def destroy
-    # Perform the lookup
-    @portfolio_item = Portfolio.find(params[:id])
-
-    # Destroy/delete the record
+     # Destroy/delete the record
     @portfolio_item.destroy
 
     # Redirect
@@ -75,7 +71,10 @@ class PortfoliosController < ApplicationController
       params.require(:portfolio).permit(:title, 
                                         :subtitle,
                                         :body, 
-                                        technologies_attributes: [:name])
+                                        :main_image,
+                                        :thumb_image,
+                                        technologies_attributes: [:name]
+                                        )
   end
 
   def set_portfolio_item
